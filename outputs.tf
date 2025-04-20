@@ -15,6 +15,10 @@ output "database_subnet_cidrs" {
   value = aws_subnet.database[*].id
 }
 
+output "aws_db_subnet_group" {
+  value = aws_db_subnet_group.default.name
+}
+
 # output "az_info" {
 #   value = data.aws_availability_zones.available.names
 # }
