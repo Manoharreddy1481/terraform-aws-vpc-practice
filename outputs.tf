@@ -15,7 +15,7 @@ output "database_subnet_cidrs" {
   value = aws_subnet.database[*].id
 }
 
-output "aws_db_subnet_group" {
+output "database_subnet_group_name" {
   value = aws_db_subnet_group.default.name
 }
 
